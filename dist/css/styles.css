@@ -10769,15 +10769,6 @@ header {
   color: #2E003F;
 }
 
-.navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-}
-
-.navbar-toggler {
-  display: none;
-}
-
 body {
   background-color: #2E003F;
 }
