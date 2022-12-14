@@ -8,3 +8,12 @@ header{
     font-family: Raleway, sans-serif;
     color: $secondary;
 }
+
+.navbar-collapse {
+    display: flex !important; // stylelint-disable-line declaration-no-important
+    flex-basis: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
