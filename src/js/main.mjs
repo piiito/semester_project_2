@@ -43,7 +43,9 @@ if (path === "/login.html"){
 
 }else if(path === "/index.html"){
     changeCTA();
+}else if(path === "/listing"){
+    postBidFormEventListener();
 }
-postBidFormEventListener();
+
 logged();
 logoutEventListener();
