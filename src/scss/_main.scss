@@ -1,0 +1,32 @@
+body{
+    background-color: $secondary;
+}
+
+main{
+    font-family: Raleway semibold, sans-serif;
+    
+}
+
+.home-container{
+    background-image: url("/src/img/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg");
+    background-size: cover;
+    background-position: 80%;
+
+}
+
+.home p{
+    color: $tertiary;
+    font-family: Raleway Medium, sans-serif;
+}
+
+.home{
+    color: $secondary;
+}
+
+.light-text{
+    color: $tertiary;
+}
+
+.yellow-text{
+    color: $primary;
+}

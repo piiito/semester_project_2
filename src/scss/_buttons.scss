@@ -1,0 +1,28 @@
+.btn-primary{
+    background-color: $primary;
+    color: $secondary;
+    border-color: $primary;
+}
+
+.btn-primary:hover{
+    background-color: $secondary;
+    color: $primary;
+    border-color: $primary;
+}
+
+.btn-outline-secondary, .btn-outline-success{
+    background-color: $quaternary;
+    color: $tertiary;
+    border-color: $quaternary;
+}
+
+.btn-outline-secondary:hover{
+    background-color: $tertiary;
+    color: $quaternary;
+    border-color: $tertiary;
+}
+
+.btn{
+    box-shadow: grey 0px 3px 8px;
+    border-radius: 2em;
+}

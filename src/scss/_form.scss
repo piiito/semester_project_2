@@ -1,0 +1,21 @@
+.form-signin label{
+    color: $tertiary;
+    font-size: 0.8rem;
+}
+.form-signin h1{
+    color: $primary;
+}
+
+.form-control{
+    border-radius: 2rem;
+}
+
+.register-account-link a{
+    color: $primary;
+    font-size: 0.8rem;
+}
+
+.form-control:disabled{
+    opacity: 50%;
+    cursor:not-allowed;
+}
