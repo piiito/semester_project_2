@@ -10,6 +10,7 @@ export function listingTemplate(listingData){
     listingWrapper.classList.add("me-md-3", "pt-3", "px-3", "mt-4", "mb-5", "pt-md-5", "px-md-5", "text-center", "overflow-hidden");
     const listingImage = document.createElement("img");
     listingImage.classList.add("img-fluid", "col-8");
+    listingImage.alt= `${listingData.title}`;
     listingImage.src = `${listingData.media}`;
     listingContainer.append(listingWrapper);
     listingWrapper.append(listingImage);
@@ -84,18 +85,19 @@ export function listingsTemplate(listingData){
 
     const listingContainer = document.querySelector("#many-listings")
     const listingWrapper = document.createElement("div");
-    listingWrapper.classList.add("me-md-3", "pt-3", "px-3", "mt-4", "mb-5", "pt-md-5", "px-md-5", "text-center", "overflow-hidden");
+    listingWrapper.classList.add("col-12", "col-sm-6", "col-md-4", "col-lg-3","col-xl-3", "pt-3", "px-3", "my-2", "pt-md-5", "text-center", "overflow-hidden");
     
     listingContainer.append(listingWrapper);
    
 
     const listingInfo = document.createElement("div");
-    listingInfo.classList.add("col");
+    listingInfo.classList.add("card");
     const listingCard = document.createElement("div");
     listingCard.classList.add("card-shadow-sm");
 
     const listingImage = document.createElement("img");
     listingImage.classList.add("img-fluid", "img-thumbnail");
+    listingImage.alt= `${listingData.title}`;
     listingImage.src = `${listingData.media}`;
 
     const cardBody = document.createElement("div");
@@ -106,13 +108,14 @@ export function listingsTemplate(listingData){
     cardTitle.innerText = `${listingData.title}`;
 
     const cardDescription = document.createElement("h3");
-    cardDescription.classList.add("card-text", "h6", "text-center");
+    cardDescription.classList.add("card-text", "h6", "text-start");
     cardDescription.innerText = `${listingData.description}`;
 
     const bidCount = document.createElement("p");
-    bidCount.classList.add("card-text", "small", "mt-4", "text-muted", "text-center");
+    bidCount.classList.add("card-text", "small", "mt-4", "text-start");
     bidCount.innerText = `Bid count: ${listingData._count.bids}`;
     const endsTime = document.createElement("p");
+    endsTime.classList.add("card-text", "small", "mt-4", "text-start");
     endsTime.innerText = `Ends: ${listingData.endsAt}`;
     listingWrapper.append(listingInfo);
     listingInfo.append(listingCard);

@@ -1,8 +1,10 @@
 import { mainAPI_URL } from "./constants.mjs"
 import { listingsEndpoint } from "./constants.mjs"
 import { loadFromStorage } from "../storage.mjs"
-const id = window.location.search;
-console.log(window.location.search);
+const id = new URLSearchParams(window.location.search);
+const newId= id.get("id");
+console.log(newId);
+
 // Post bid function
 export async function  postBid(bidData){
 
@@ -10,7 +12,7 @@ export async function  postBid(bidData){
     
     console.log(id);
 
-    const response = await fetch (`${mainAPI_URL}/api/v1/auction/listings/${id}/bids`, {
+    const response = await fetch (`${mainAPI_URL}/api/v1/auction/listings/${newId}/bids`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

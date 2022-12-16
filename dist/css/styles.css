@@ -10778,9 +10778,9 @@ main {
 }
 
 .home-container {
-  background-image: url("/src/img/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg");
+  background-image: url("/src/img/geordanna-cordero-2Qg4y32pdCc-unsplash-–-Kopi.png");
   background-size: cover;
-  background-position: 80%;
+  background-position: 75%;
 }
 
 .home p {
@@ -10832,6 +10832,7 @@ main {
 footer {
   background-color: #F4EEF7;
   font-family: Raleway, sans-serif;
+  color: #2E003F;
 }
 
 .form-signin label {
@@ -10863,6 +10864,14 @@ footer {
 
 .card-shadow-sm {
   background-color: #F4EEF7;
+}
+
+.card-body {
+  color: #2E003F;
+}
+
+.card-text p {
+  color: #2E003F;
 }
 
 /*# sourceMappingURL=styles.css.map */

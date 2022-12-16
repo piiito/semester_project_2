@@ -14,7 +14,8 @@ import { postBidFormEventListener } from "./eventlisteners/bid.mjs";
 
 
 const path = location.pathname;
-
+const bidform = document.querySelector("#post-bid-form");
+console.log(bidform);
 
 
 if (path === "/login.html"){
@@ -43,8 +44,9 @@ if (path === "/login.html"){
 
 }else if(path === "/index.html"){
     changeCTA();
-}else if(path === "/listing"){
+}else if(bidform){
     postBidFormEventListener();
+    
 }
 
 logged();
