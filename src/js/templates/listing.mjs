@@ -85,18 +85,18 @@ export function listingsTemplate(listingData){
 
     const listingContainer = document.querySelector("#many-listings")
     const listingWrapper = document.createElement("div");
-    listingWrapper.classList.add("col-12", "col-sm-6", "col-md-4", "col-lg-3","col-xl-3", "pt-3", "px-3", "my-2", "pt-md-5", "text-center", "overflow-hidden");
+    listingWrapper.classList.add("col-12","col-sm-6", "col-md-4", "col-lg-3","col-xl-3", "pt-3", "px-3", "my-2", "pt-md-5", "text-center", "overflow-hidden");
     
     listingContainer.append(listingWrapper);
    
 
     const listingInfo = document.createElement("div");
-    listingInfo.classList.add("card");
+    listingInfo.classList.add("card" , "h-100", );
     const listingCard = document.createElement("div");
     listingCard.classList.add("card-shadow-sm");
 
     const listingImage = document.createElement("img");
-    listingImage.classList.add("img-fluid", "img-thumbnail");
+    listingImage.classList.add("img-fluid", "img-thumbnail", "card-img");
     listingImage.alt= `${listingData.title}`;
     listingImage.src = `${listingData.media}`;
 

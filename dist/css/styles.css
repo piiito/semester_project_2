@@ -10870,8 +10870,10 @@ footer {
   color: #2E003F;
 }
 
-.card-text p {
-  color: #2E003F;
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
