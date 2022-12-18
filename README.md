@@ -1,4 +1,4 @@
-# Art Vandelay auction website
+# Art Vandelay website
 This is a website for auction house.
         
 ## Description
