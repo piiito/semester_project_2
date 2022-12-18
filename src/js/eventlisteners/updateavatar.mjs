@@ -22,16 +22,13 @@ export async function updateProfileFormEventListener() {
 
     const profile = await getProfile(name);
     
-    console.log(profile);
 
     updateProfileForm.avatar.value = profile.avatar;
-    // const avatar = profile.avatar;
-    // console.log(profile);
+ 
     
     const avatarImage = document.querySelector(".avatar-image");
     avatarImage.src= profile.avatar;
 
-    // console.log(name);
 
     button.disabled = false;
 
@@ -41,7 +38,6 @@ export async function updateProfileFormEventListener() {
         const formData = new FormData(updateProfileForm);
         const profileData = Object.fromEntries(formData.entries())
         
-        console.log(profileData);
 
         profileData.name = name;
         profileData.email = email;
@@ -50,7 +46,6 @@ export async function updateProfileFormEventListener() {
         const avatarImage = document.querySelector(".avatar-image");
         avatarImage.src= avatar;
 
-        console.log(profileData);
         updateProfile(profileData);
 
     });

@@ -25,15 +25,6 @@ export async function  updateProfile(profileData){
      
      return await response.json();
 
-    // const profile = await response.json();  
-    // console.log(profile);
-    // const avatar = profile.avatar;
-
-
-
-    // if (avatar) {
-    //     alert("Your avatar was successfully updated!");
-    //     window.location.href="/profile.html";
 
     }
 
