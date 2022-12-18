@@ -30,5 +30,8 @@ export async function loginAccount(profile){
     if (token) {
         window.location.href="/listings.html";
 
+    }else{
+        alert("Please enter correct email and password");
+        location.reload();
     }
 }

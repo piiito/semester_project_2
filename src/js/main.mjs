@@ -7,15 +7,16 @@ import { makeListingsTemplate } from "./templates/listing.mjs";
 import { logoutEventListener } from "./eventlisteners/logout.mjs";
 import { updateProfileFormEventListener } from "./eventlisteners/updateavatar.mjs";
 import { showCredits } from "./api/totalcredit.mjs";
-import { logged } from "./api/logout.mjs";
-import { changeCTA } from "./api/logout.mjs";
+import { logged } from "./changeelements.mjs";
+import { changeCTA } from "./changeelements.mjs";
+import { elementHidden } from "./changeelements.mjs";
 import { postBidFormEventListener } from "./eventlisteners/bid.mjs";
+import { getProfile } from "./api/updateavatar.mjs";
 
 
 
 const path = location.pathname;
-const bidform = document.querySelector("#post-bid-form");
-console.log(bidform);
+
 
 
 if (path === "/login.html"){
@@ -44,6 +45,9 @@ if (path === "/login.html"){
 
 }else if(path === "/index.html"){
     changeCTA();
+    elementHidden();
+}else if(path === "/profile.html"){
+    getProfile();
 }
 
 logged();

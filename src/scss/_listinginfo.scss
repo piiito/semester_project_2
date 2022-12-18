@@ -9,7 +9,6 @@
 
 .listing-title{
     color: $primary;
-    
 }
 
 .collapse p{
@@ -33,6 +32,10 @@
     object-fit: cover;
 }
 
+.listing-img{
+    max-height: 500px;
+    max-width: 100%;
+}
 .card{
     background-color: $tertiary;
 }

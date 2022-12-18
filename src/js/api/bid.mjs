@@ -1,16 +1,19 @@
 import { mainAPI_URL } from "./constants.mjs"
 import { listingsEndpoint } from "./constants.mjs"
 import { loadFromStorage } from "../storage.mjs"
-const id = new URLSearchParams(window.location.search);
-const newId= id.get("id");
-console.log(newId);
+
+
+
 
 // Post bid function
+
 export async function  postBid(bidData){
 
+    const id = new URLSearchParams(window.location.search);
+    const newId= id.get("id");
     const token = loadFromStorage("token");
     
-    console.log(id);
+    
 
     const response = await fetch (`${mainAPI_URL}/api/v1/auction/listings/${newId}/bids`, {
         method: "POST",
@@ -22,16 +25,20 @@ export async function  postBid(bidData){
      })
 
     const bid = await response.json();
-    console.log(bid);
+    
     const bidId = bid.id;
 
     if (bidId) {
+
         alert("Your bid was successful");
         location.reload();
+
     } else{
+
         alert("Sorry! You need to log in to place a bid!")
         window.location.href="/login.html";
     }
+
     return bid;
 
 }

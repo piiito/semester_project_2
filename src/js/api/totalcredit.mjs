@@ -17,13 +17,11 @@ export async function showCredits(){
      })
 
     const credit = await response.json();
-    console.log(credit.credits);
+    
     if(credit){
         const totalCredit = document.querySelector("#credits");
         totalCredit.innerHTML= `${credit.credits}`;
 
-        console.log(totalCredit);
     }
-    // return credit;
 
 }

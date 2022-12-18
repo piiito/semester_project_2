@@ -6,7 +6,7 @@ import { loadFromStorage } from "../storage.mjs"
 // Update profile function
 export async function  updateProfile(profileData){
     if(!profileData.name) {
-        throw new Error ("Update equires a name");
+        throw new Error ("Update requires a name");
 
     }
 
@@ -23,7 +23,7 @@ export async function  updateProfile(profileData){
         body: JSON.stringify(profileData)
      })
      
-     return await response.json;
+     return await response.json();
 
     // const profile = await response.json();  
     // console.log(profile);
@@ -41,15 +41,15 @@ export async function  updateProfile(profileData){
     
     
     // Get profile function
-    export async function  getProfile(name){
+    export async function  getProfile(){
+        const name = loadFromStorage("name");
         if(!name) {
-            throw new Error ("Update equires a name");
+            throw new Error ("Update requires a name");
     
         }
     
         const getProfileURL= `${mainAPI_URL}/api/v1/auction/profiles/${name}`;
         const token = loadFromStorage("token");
-        // const name = loadFromStorage("name");
     
         const response = await fetch (getProfileURL, {
             method: "GET",
@@ -59,18 +59,10 @@ export async function  updateProfile(profileData){
             }
          })
          
-         return response.json;
+         const profile = response.json();
          
-        // const profile = await response.json();  
-        // console.log(profile);
-        // const avatar = profile.avatar;
-    
-    
-    
-        // if (avatar) {
-        //     alert("Your avatar was successfully updated!");
-        //     window.location.href="/profile.html";
-    
+         return profile;
+         
         }
     
     

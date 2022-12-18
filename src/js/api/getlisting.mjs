@@ -17,7 +17,7 @@ export async function readListing(id){
      })
 
     const listing = await response.json();
-    console.log(listing);
+    
     return listing;
 
 }

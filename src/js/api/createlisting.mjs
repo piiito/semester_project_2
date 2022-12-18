@@ -30,7 +30,7 @@ export async function  createListing({
      })
 
     const listing = await response.json();
-    console.log(listing);
+    
     const id = listing.id;
 
     if (id) {

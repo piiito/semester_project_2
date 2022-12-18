@@ -4,14 +4,20 @@ body{
 
 main{
     font-family: Raleway semibold, sans-serif;
-    
+}
+
+h1{
+    color: $primary;
+}
+
+.home-container h1{
+    color: $secondary;
 }
 
 .home-container{
     background-image: url("/src/img/geordanna-cordero-2Qg4y32pdCc-unsplash-–-Kopi.png");
     background-size: cover;
     background-position: 75%;
-
 }
 
 .home p{

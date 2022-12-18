@@ -20,12 +20,6 @@ export function searchListings(listings) {
   export function renderListings(listingsToRender) {
   const listingContent = document.querySelector("#many-listings");
 
-  listingsToRender.forEach(function (listingData) {
-
-  
-
-
-  console.log("hello");
   listingContent.innerHTML = "";
 
   listingsToRender.forEach(function (listingData) {
@@ -48,5 +42,4 @@ export function searchListings(listings) {
 
                                 
   });
-  
-})}
+}

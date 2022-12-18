@@ -7,16 +7,12 @@ import { loadFromStorage } from "../storage.mjs";
 
 export async function updateProfileFormEventListener() {
     const updateProfileForm = document.querySelector("#profileform");
-    
-
-    
 
     if (updateProfileForm){
 
     const name = loadFromStorage("name");
     const email = loadFromStorage("email");
-    const avatar = loadFromStorage("avatar");
-
+    // const avatar = loadFromStorage("avatar");
     updateProfileForm.name.value = name;
     updateProfileForm.email.value = email;
 
@@ -24,12 +20,18 @@ export async function updateProfileFormEventListener() {
     button.disabled = true;
 
 
-    const profileData = await getProfile(name);
-
+    const profile = await getProfile(name);
     
-    updateProfileForm.avatar.value = profileData.avatar;
+    console.log(profile);
 
-    console.log(name);
+    updateProfileForm.avatar.value = profile.avatar;
+    // const avatar = profile.avatar;
+    // console.log(profile);
+    
+    const avatarImage = document.querySelector(".avatar-image");
+    avatarImage.src= profile.avatar;
+
+    // console.log(name);
 
     button.disabled = false;
 
@@ -39,9 +41,14 @@ export async function updateProfileFormEventListener() {
         const formData = new FormData(updateProfileForm);
         const profileData = Object.fromEntries(formData.entries())
         
+        console.log(profileData);
 
         profileData.name = name;
         profileData.email = email;
+        const avatar = profileData.avatar;
+        
+        const avatarImage = document.querySelector(".avatar-image");
+        avatarImage.src= avatar;
 
         console.log(profileData);
         updateProfile(profileData);

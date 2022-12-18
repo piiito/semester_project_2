@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Art Vandelay, your one stop shop to selling and buying art! Get 1000 credits when you join and use them to bid on art!"/>
     <link rel="stylesheet" href="/dist/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="/src/js/main.mjs" defer type="module"></script>
+    <script src="/src/js/main.mjs" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Art Vandelay | Home</title>
+    <title>Art Vandelay | Your Credits</title>
 </head>
 <body>
-    <header><nav class="navbar navbar-expand-lg fixed-top bg-light" aria-labelledby="primary-navigation">
+    <header><nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Art Vandelay</a>
           <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -40,24 +41,23 @@
                 <a class="nav-link logged-in" href="login.html">Login</a>
               </li>
             </ul>
-            <div class="d-md-flex justify-content-md-end">
+            <div class="justify-content-md-end">
               <button class="btn btn-outline-success logout-button logged-out">Log out</button>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main class="form-signin w-100 pb-5 mb-5 m-auto">
-        <section class="log-in col-6 pb-5 mb-5 mx-auto">
+    <main class="w-100 pb-5 mb-5 m-auto min-vh-100">
+        <section class="col-6 pb-5 mb-5 mx-auto">
             <h1 class="pt-5 mt-5 text-center">Credits overview</h1>
             <h2 class="pt-5 light-text h5 text-center">You have</h2>
             <h3 id="credits" class="pt-3 fw-bold h1 display-1 text-center"></h3>
             <h4 class="pt-2 light-text h5 text-center">credits</h4> 
       </section>
     </main>
-    <footer class="w-100 py-3 position-absolute">
+    <footer class="w-100 py-3 mt-auto">
       <div class="container mt-auto">
-        <footer class="py-3">
           <div class="row">
             <div class="col-6 col-md-6 mb-2">
               <ul class="nav flex-column">
@@ -71,7 +71,6 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between mt-3 pt-1 border-top">
             <p>© Birgitte Vedaa, 2022 .</p>
           </div>
-        </footer>
       </div>
     </footer>
 </body>

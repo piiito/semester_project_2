@@ -10777,6 +10777,14 @@ main {
   font-family: Raleway semibold, sans-serif;
 }
 
+h1, .h1 {
+  color: #DDF600;
+}
+
+.home-container h1, .home-container .h1 {
+  color: #2E003F;
+}
+
 .home-container {
   background-image: url("/src/img/geordanna-cordero-2Qg4y32pdCc-unsplash-–-Kopi.png");
   background-size: cover;
@@ -10858,6 +10866,9 @@ footer {
 
 .form-control {
   border-radius: 2rem;
+  border: solid;
+  border-width: 4px;
+  border-color: #74009E;
 }
 
 .register-account-link a {
@@ -10907,6 +10918,11 @@ footer {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
+}
+
+.listing-img {
+  max-height: 500px;
+  max-width: 100%;
 }
 
 .card {

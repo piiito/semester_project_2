@@ -23,28 +23,7 @@ export async function  readListings(){
     
     return listings;
 
-
 }
-
-// export async function  readListings(){
-//     const token = loadFromStorage("token");
-
-//     const response = await fetch (`${mainAPI_URL}${listingsEndpoint}?_seller=true&_bids=true&_active=true&sort=created&sortOrder=desc`, {
-//         method: "GET",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Authorization": `Bearer ${token}`
-//         },
-//      })
-     
-//     if (response.ok) {
-//         const listings = await response.json();
-//         searchListings(listings);
-//         return listings;
-//        } 
-       
-    
-
 
 
   

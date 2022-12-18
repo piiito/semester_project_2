@@ -21,6 +21,9 @@ export async function registerAccount(profile){
         alert("You are now registered! Please log in");
         window.location.href="/login.html";
 
+    }else{
+        alert("Please try again");
+        location.reload();
     }
     return result;
 
