@@ -27,9 +27,11 @@ export async function  postBid(bidData){
 
     if (bidId) {
         alert("Your bid was successful");
-       
-
-    } 
+        location.reload();
+    } else{
+        alert("Sorry! You need to log in to place a bid!")
+        window.location.href="/login.html";
+    }
     return bid;
 
 }

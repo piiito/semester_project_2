@@ -15,6 +15,16 @@
     color: $tertiary;
     border-color: $quaternary;
 }
+.btn-outline-secondary:hover, .btn-outline-success:hover{
+    background-color: $primary;
+    color: $secondary;
+    border-color: $primary;
+}
+.btn-outline-secondary:active, .btn-outline-success:active,  .btn-outline-secondary:focus, .btn-outline-success:focus{
+    background-color: $quaternary;
+    color: $tertiary;
+    border-color: $quaternary;
+}
 
 .btn-outline-secondary:hover{
     background-color: $tertiary;

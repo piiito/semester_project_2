@@ -10818,6 +10818,18 @@ main {
   border-color: #74009E;
 }
 
+.btn-outline-secondary:hover, .btn-outline-success:hover {
+  background-color: #DDF600;
+  color: #2E003F;
+  border-color: #DDF600;
+}
+
+.btn-outline-secondary:active, .btn-outline-success:active, .btn-outline-secondary:focus, .btn-outline-success:focus {
+  background-color: #74009E;
+  color: #F4EEF7;
+  border-color: #74009E;
+}
+
 .btn-outline-secondary:hover {
   background-color: #F4EEF7;
   color: #74009E;
@@ -10858,8 +10870,29 @@ footer {
   cursor: not-allowed;
 }
 
-.listing-info {
+.form-label {
   color: #F4EEF7;
+}
+
+.listing-info, .single-listing {
+  color: #F4EEF7;
+  border-color: #74009E;
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+.listing-title {
+  color: #DDF600;
+}
+
+.collapse p {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border-color: #74009E;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .card-shadow-sm {
@@ -10872,8 +10905,12 @@ footer {
 
 .card-img {
   width: 100%;
-  height: 15vw;
+  max-height: 200px;
   object-fit: cover;
+}
+
+.card {
+  background-color: #F4EEF7;
 }
 
 /*# sourceMappingURL=styles.css.map */

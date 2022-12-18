@@ -44,10 +44,8 @@ if (path === "/login.html"){
 
 }else if(path === "/index.html"){
     changeCTA();
-}else if(bidform){
-    postBidFormEventListener();
-    
 }
 
 logged();
 logoutEventListener();
+postBidFormEventListener();

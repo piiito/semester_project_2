@@ -1,5 +1,23 @@
-.listing-info{
+.listing-info, .single-listing{
     color: $tertiary;
+    border-color: $quaternary;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 2px;
+    padding: 1rem;
+}
+
+.listing-title{
+    color: $primary;
+    
+}
+
+.collapse p{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border-color: $quaternary;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .card-shadow-sm{
@@ -11,6 +29,10 @@
 }
 .card-img {
     width: 100%;
-    height: 15vw;
+    max-height: 200px;
     object-fit: cover;
+}
+
+.card{
+    background-color: $tertiary;
 }
