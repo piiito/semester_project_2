@@ -1,4 +1,7 @@
 # Art Vandelay website
+
+![artvandelay](https://github.com/piiito/semester_project_2/assets/91608038/8cbfa119-56b4-40cf-8548-84009f5cf937)
+
 This is a website for auction house.
         
 ## Description
